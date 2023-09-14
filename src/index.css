@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.img-container .layer {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.img-container:hover .layer {
+  opacity: 1;
+  visibility: visible;
+}
+.selectedImg {
+  width: 35% !important ;
+}
+.header-container {
+  padding-top: 60px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px #f0f0f0 solid;
+  outline: none;
+  box-shadow: none;
+  transition: 0.5s;
+}
+
+label {
+  top: 25%;
+  font-size: 1.1rem;
+  font-weight: 300;
+  transition: 0.5s;
+  padding: 10px;
+  pointer-events: none;
+}
+input::placeholder {
+  color: transparent;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -10%;
+  background-color: white;
+}
+
+.notFound-container h1,
+.notFound-container h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 80px;
+}
+
+.nav-link.active {
+  background-color: #1abc9c;
+  border-radius: 10px;
+}
